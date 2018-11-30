@@ -1,21 +1,11 @@
 import os
-from functools import reduce
 import bpy
-from bpy.app import handlers
-
-import cpuinfo
 import psutil
-
 import pandas as pd
-
 import multiprocessing as mp
-
 import pathlib
-
 import time
 
-#get cpu info
-cpu_info = cpuinfo.get_cpu_info()
 
 #get the number of physical cpu
 cores = psutil.cpu_count(logical=False)
